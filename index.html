@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework-four</title>
+    <title>Homework-six</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -530,7 +530,7 @@
 
         <button type="button" class="modal-clouse" data-modal-close>
 
-          <svg class="icon" width="18" height="18">
+          <svg class="icon icon-clouse" width="18" height="18">
             <use href="./images/icons.svg#close"></use>
           </svg>
 
@@ -540,13 +540,14 @@
 
         <p class="modal-title title">Оставьте свои данные, мы вам перезвоним</p>
 
+
         <form>
 
           <div class="modal-field">
             <label for="user-name" class="modal-label">Имя</label>
 
             <div class="input-wrap">
-              <input type="text" class="modal-input" name="user-name" required minlength="2" id="user-name"/>
+              <input type="text" class="modal-input" name="user-name" required minlength="2" placeholder="" id="user-name"/>
               <svg class="modal-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
@@ -558,57 +559,65 @@
             <label for="user-tel" class="modal-label">Телефон</label>
 
             <div class="input-wrap">
-              <input type="tel" class="modal-input" name="user-tel" required id="user-tel"/>
+              <input type="tel" class="modal-input" name="user-tel" required placeholder="" id="user-tel"/>
               <svg class="modal-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </div>
 
-        </div>
+          </div>
 
           <div class="modal-field">
             <label for="user-email" class="modal-label">Почта</label>
 
             <div class="input-wrap">
-              <input type="email" class="modal-input" name="user-email" required id="user-email"/>
+              <input type="email" class="modal-input" name="user-email" required placeholder="" id="user-email"/>
               <svg class="modal-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
             </div>
-        </div>
-
-          <div class="modal-field">
-          <label for="user-komments" class="modal-label">Комментарий</label>
-          <textarea name="user-komments" id="user-komments" class="modal-text" placeholder="Введите текст"></textarea>
           </div>
 
-        <div class="modal-field">
+          <div class="modal-text">
 
-          <input 
-          type="checkbox" 
-          name="input-consent" 
-          value="true" 
-          class="modal-check"
-          id="input-consent"/>
+            <label for="user-komments" class="label-text">Комментарий</label>
 
-          <label for="input-consent" class="modal-check-text">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+            <textarea name="user-komments" id="user-komments" class="area-text" placeholder="Введите текст"></textarea>
+          </div>
+
+
+        <div class="checkbox-field">
+
+          <input type="checkbox" name="input-consent" value="true" 
+          class="check-input visually-hidden" id="input-consent"/>
+
+          <label for="input-consent" class="check-text">
+            
+            <span class="checkbox-span">
+              <svg class="check-icon" width="11" height="8">
+                <use href="./images/icons.svg#icon-chekin"></use>
+              </svg>
+            </span>
+
+            Соглашаюсь с рассылкой и принимаю
+            <a href="" class="checkbox-link link" target="_blank" rel="noopener nore ferrer">Условия договора</a>
+          
+          </label>
+
 
         </div>
 
-
-        <button type="submit"> 
+        <button type="submit" class="send-btn button"> 
           Отправить
         </button>
 
 
 
 
+
         </form>
 
-
-
       </div>
-
     </div>
 
 
